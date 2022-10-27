@@ -23,7 +23,7 @@
     private async void btnLogin_Click()
     {
         var authModule = await JSRunTime.InvokeAsync<IJSObjectReference>("import", "./js/auth.js");
-        await authModule.InvokeVoidAsync("SignIn", "denis@voituron.net", "MyPassword", "/");
+        await authModule.InvokeVoidAsync("SignIn", "willamybraga@teste.com", "MyPassword", "/");
     }
 
     private async void btnLogout_Click()
