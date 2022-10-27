@@ -22,7 +22,7 @@ namespace MyApplication.Controllers
             var userPrincipal = context.Principal;
 
             // If not valid, Sign out
-            if (userPrincipal.Identity.Name != "denis@voituron.net")
+            if (userPrincipal.Identity.Name != "willamybraga@teste.com")
             {
                 context.RejectPrincipal();
                 await context.HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
